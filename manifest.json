@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Codeforces Send Button Renamer",
+    "version": "1.0",
+    "description": "Заменяет кнопку 'Отослать' на 'Отсосать' в интерфейсе Codeforces.",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://codeforces.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://codeforces.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
